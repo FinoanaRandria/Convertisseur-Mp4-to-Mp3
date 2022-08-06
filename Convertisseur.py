@@ -8,7 +8,7 @@ root = Tk()
 
 root.title("Convertisseur Mp4 to Mp3 By Finoana Randri")
 root.config(background="Orange")
-root.iconbitmap("yad.ico")
+#root.iconbitmap("yad.ico")
 root.geometry("500x500")
 
 def mp4():
