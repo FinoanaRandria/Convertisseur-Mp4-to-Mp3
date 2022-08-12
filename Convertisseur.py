@@ -19,7 +19,7 @@ image = PhotoImage(file="k.png").zoom(30).subsample(30)
 canvas = Canvas(root,width=width,height=heigth,bg="Orange",bd=0,highlightthickness=0)
 canvas.create_image(width/2,heigth/2,image=image)
 canvas.pack(expand=YES)
-#mon image
+
 def mp4():
     thefile = filedialog.askopenfilename(initialdir="/",title="chosose video",filetypes=(("mp4 files","*.mp4"), ("wav files","*.wav")))
     clip = mp.VideoFileClip(thefile)
