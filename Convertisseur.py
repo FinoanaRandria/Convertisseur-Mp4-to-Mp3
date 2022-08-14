@@ -1,7 +1,7 @@
 from tkinter import ttk
 from tkinter import *
 from tkinter import filedialog
-from turtle import left, width
+from turtle import bgcolor, left, width
 import moviepy.editor as mp
 from click import command
 #follow Finoana Randria on Git hub
@@ -30,7 +30,7 @@ selectfile = Button(root,text="select file",command=mp4).pack(expand=YES)
 
 #barre de menu
 
-menu_bar = Menu(root)
+menu_bar = Menu(root,bg="white")
 
 #preminer menu(i love python now but i am beginer  XD FinoanaRandria)
 file_menu = Menu(menu_bar ,tearoff=0)
