@@ -27,4 +27,16 @@ def mp4():
 
 selectfile = Button(root,text="select file",command=mp4).pack(expand=YES)
 
+
+#barre de menu
+
+menu_bar = Menu(root)
+
+#preminer menu(i love python now but i am beginer  XD FinoanaRandria)
+file_menu = Menu(menu_bar ,tearoff=0)
+file_menu.add_command(label="Quit" ,command=root.quit)
+menu_bar.add_cascade(label="option",menu=file_menu)
+
+#insertion dans la fenetre
+
 root.mainloop()
