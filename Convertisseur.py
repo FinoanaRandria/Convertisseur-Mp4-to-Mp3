@@ -26,7 +26,7 @@ def mp4():
     clip = mp.VideoFileClip(thefile)
     clip.audio.write_audiofile(thefile+".mp3")
 gradient = PhotoImage(file='index.png')
-selectfile = Button(root,image=gradient,border=0,command=mp4).pack(expand=YES)
+selectfile = Button(root,image=gradient,bg="#12EBCE",border=0,command=mp4).pack(expand=YES)
 
 
 #barre de menu
