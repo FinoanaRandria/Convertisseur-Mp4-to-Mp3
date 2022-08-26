@@ -6,6 +6,7 @@ import moviepy.editor as mp
 from click import command
 #follow Finoana Randria on Git hub
 root = Tk()
+ #variable
 
 root.title("Convertisseur Mp4 to Mp3 By Finoana Randri")
 root.config(background="Orange")
@@ -24,8 +25,8 @@ def mp4():
     thefile = filedialog.askopenfilename(initialdir="/",title="chosose video",filetypes=(("mp4 files","*.mp4"), ("wav files","*.wav")))
     clip = mp.VideoFileClip(thefile)
     clip.audio.write_audiofile(thefile+".mp3")
-
-selectfile = Button(root,text="select file",command=mp4).pack(expand=YES)
+gradient = PhotoImage(file='f.png')
+selectfile = Button(root,image=gradient,border=0,command=mp4).pack(expand=YES)
 
 
 #barre de menu
